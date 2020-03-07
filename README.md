@@ -1,3 +1,14 @@
+# Movies and TV shows
+
+This is a progressive web application project made with ReactJS.
+Data from [themoviedb.org](https://www.themoviedb.org/) API.
+
+The project is a fork of a previous learning personal project [ReactJS + Redux + The Movie Db API experiment](https://github.com/albertofortes/the-mobie-database-react-app) improvin code.
+
+TO DO
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

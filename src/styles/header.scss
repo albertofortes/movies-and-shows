@@ -1,0 +1,93 @@
+.header {
+  box-sizing: border-box;  
+  padding: .5rem 3rem;
+  font: normal 300 1.7rem $typefacePrimary;
+
+  @media only screen and (min-width: $breakpoint-md) {
+    height: $headerHeight;
+    box-sizing: content-box;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    a {
+      color: #fff;
+      display: inline-block;
+      padding: .5rem 1.25rem;
+    }
+  }
+
+  .header__logos {
+    display: flex;
+    align-items: center;
+
+    > .plus {
+      font-size: 2.5rem;
+      margin: 0 0 0 2rem;
+      color: $redNetflix;
+    }
+
+    .logo {
+      height: 5rem;
+
+      &.logo--animated {
+        animation: App-logo-spin infinite 20s linear;
+      }
+    }
+  }
+
+  .header__right {
+    display: flex;
+    align-items: center;
+  }
+
+  .search__form {
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.35);
+    padding: 2rem;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    @media only screen and (min-width: $breakpoint-md) {
+      position: static;
+      padding: 0;
+    }
+    .search__form__field {
+      box-sizing: border-box;
+      border: 1px solid $blueReact;
+      padding: .75rem 1.25rem;
+      font: normal 300 1.7rem $typefacePrimary;
+      color: $blueReact;
+      background-color: #191919;
+      width: 100%;
+
+      @media only screen and (min-width: $breakpoint-md) {
+        width: auto;
+      }
+      
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

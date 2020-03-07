@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import WebFont from 'webfontloader'
+
+WebFont.load({
+  google: {
+    families: ['Open+Sans:300,400,700', 'Anton:400', 'sans-serif']
+  }
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -1,0 +1,25 @@
+.footer {
+  text-align: center;
+  font: normal 400 1.5rem $typefacePrimary; 
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: rgba(0,0,0,.5);
+  
+
+  @media only screen and (min-width: $breakpoint-md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $footerHeight;
+    padding: 0 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  a {
+    color: $blueReact;
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+}
